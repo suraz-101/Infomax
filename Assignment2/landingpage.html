@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-family: 'Lato', sans-serif;
+        }
+        .navbar
+        {
+           
+            padding: 10px;
+            background-color: white;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            width: 80%;
+            margin: auto;
+        }
+        .hamburger_menu
+        {
+            display: none;
+        }
+
+        .navbar h1{
+            
+            font-size: 2em;
+            font-weight: bold;
+            /* padding: 20px 40px; */
+            
+         
+        }
+
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            /* margin-right: 40px; */
+            padding: 20px 40px;
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+          
+        }
+        .button 
+        {
+            text-decoration: none;
+            color: #000;
+            font-size: 1.2em;
+            border: 1px solid #00000044;
+            padding: 10px;
+            border-radius: 8px;
+
+        }
+        .content
+        {
+            width: 80%;
+            margin:auto;
+            margin-top: 150px;
+            font-size: 30px;
+            display: flex;
+            
+        }
+
+        .right_container h1{
+            font-size: 60px;
+            margin-bottom: 50px;
+    
+        }
+
+        .right_container
+        {
+            width: 50%;
+            /* background-color: aquamarine; */
+          
+          }
+
+        .left_container
+        {
+            width: 50%;
+            /* background-color: blue; */
+            /* display: inline-block; */
+        }
+         .list
+         {
+            /* background-color: antiquewhite; */
+             height: 200px;
+             
+         }
+
+         
+         svg{
+            width: 30px;
+            color: blueviolet;
+            margin-right: 20px;
+         }
+
+         .list
+         {
+            
+         }
+        .sublist
+        {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            font-size: 18px;
+
+        }
+
+       
+        .emailbox
+         {
+             background-color: white;
+             justify-content: space-between;
+             width: 85%;
+             display: flex;
+             border: 1px solid #00000044;
+             padding: 5px;
+            border-radius: 8px;
+         }
+
+         input{
+             outline: none;
+             border: none;
+             padding: 0 16px;
+             font-size: 20px;
+             /* border-radius: 8px; */
+         }
+        .join_button
+        {
+            text-decoration:none;
+            background-color: blueviolet;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 20px;
+            
+            padding: 10px 20px;
+        }
+
+        
+        .img
+        {
+            padding: 5px;
+            border-radius: 16px;
+            margin-top: 30px;
+            
+        }
+        @media screen and (max-width: 1024px)
+        {
+            .hamburger_menu
+        {
+            display: inline-block;
+             color: #000;
+        }
+        .navbar a{
+             display: none;
+        }
+
+        .content {
+            width: 100%;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .left_container,
+        .right_container {
+            width: 80%;
+        }
+
+        .img {
+            width: 100%;
+        }
+
+        .join_button {
+            display: none;
+        }
+
+        .emailbox {
+            width: 100%;
+        }
+            }
+        
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Brand<h1></h1>
+        <ul>
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">Components</a></li>
+            <li><a href="#">pricing</a></li>
+            <li> <a href="#">Contact</a></li>
+            <li>  <a href="#">FAQ</a></li>
+        </ul>
+        <a href="#" class="button">Contact Us</a>
+        <img class="hamburger_menu" src="./assets/ham.svg" alt=""> 
+     </div>
+     <div class="content">
+         <div class="right_container">
+            <h1>Easies way to <br> create your website</h1>
+            <div class="list">
+                <div class="sublist">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p>Clean and simple layout</p>
+                </div>
+                <div class="sublist">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p>Just CopyPaste coding</p>
+                </div>
+                <div class="sublist">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p>Easy to Use</p>
+                </div>
+
+            </div>
+            <div class="emailbox">
+                <input type="text" placeholder="Enter your email" >
+                <a href="#" class="join_button"> Join us</a>
+            </div> 
+               
+        </div>
+        <div class="left_container">
+            <img  class="img" src="./assets/task-hero.png" height="90%" width="98%" alt="">
+            
+             
+         </div>
+     </div>
+    
+</body>
+</html>
