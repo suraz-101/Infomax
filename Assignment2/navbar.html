@@ -19,7 +19,8 @@
 .navbar
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    text-align: center;
     box-shadow: 1px 1px 5px #00000044;
    
 }
@@ -95,7 +96,9 @@ input {
 .navbar_right
 {
     display: flex;
+    justify-content: space-around;
     margin-left: 30px;
+    align-items: center;
 }
 
 .avatar {
@@ -115,10 +118,7 @@ input {
     width: 20px;
     opacity: 0.4;
 }
-.navbar_rights {
-    width: 20%;
-    margin-left: 40px;
-}
+
 
 
 
@@ -129,26 +129,28 @@ input {
             <div class="logo">
                 <img src="./assets/task-nav-logo.svg" alt="" class="logo__icon"><h1>workflow</h1>
             </div>
-            
-            <ul >
-                <div class="link">
-                    <li ><a class="active" href="#">Dashboard</a></li>
-                    <div class="active__line"></div>
-                </div>
-                <div class="link">
-                    <li class="active__link"><a class="" href="#">Team</a></li>
-                    <div class=""></div>
-                </div>
-                <div class="link">
-                    <li class="active__link"><a class="" href="#">Projects</a></li>
-                    <div class=""></div>
-                </div>
-                <div class="link">
-                    <li class="active__link"><a class="" href="#">Calender</a></li>
-                    <div class=""></div>
-                </div>
-                
-            </ul>
+            <div class="navbar-left">
+                <ul >
+                    <div class="link">
+                        <li ><a class="active" href="#">Dashboard</a></li>
+                        <div class="active__line"></div>
+                    </div>
+                    <div class="link">
+                        <li class="active__link"><a class="" href="#">Team</a></li>
+                        <div class=""></div>
+                    </div>
+                    <div class="link">
+                        <li class="active__link"><a class="" href="#">Projects</a></li>
+                        <div class=""></div>
+                    </div>
+                    <div class="link">
+                        <li class="active__link"><a class="" href="#">Calender</a></li>
+                        <div class=""></div>
+                    </div>
+                    
+                </ul>
+            </div>
+           
 
         
         
