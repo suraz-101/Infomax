@@ -132,9 +132,13 @@
       position:absolute;   
       top: 30px; 
       left: 30px;
-     
-      
-    
+      transform: rotate(45deg);
+
+    }
+
+    .design1:hover{
+
+      transform: rotate(225deg);
     }
     .smallbox
     {
@@ -144,6 +148,7 @@
       border-radius: 50%;
       position: relative;
       margin: -30px -30px;
+      transform: rotate(45deg);
    
     }
 
@@ -248,9 +253,60 @@
   border-radius: 50%;
   /* margin-top:15px ; */
   margin-left: 20px;
+  transition: all 2s;
 
 }
 
+.partition
+{
+  background-color: #24263c;
+  height: 1000px;
+  width: 70%;
+  transform: rotate(45deg);
+  margin-left: -400px;
+  border-radius: 0 50% 0 0 ;
+  transition: all 1s;
+}
+
+.partition:hover
+{
+ transform: rotate(-40deg);
+}
+
+.point:hover{
+  margin-left: -30px;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+
+.irish:hover{
+  background-color: black;
+  transition: all 1s ease-in-out;
+}
+
+.secondpartition
+{
+
+  background-color: maroon;
+  height: 400px;
+  width: 30%;
+  margin: auto;
+  transform: rotate(45deg);
+  border-radius: 100% 0 100% 0;
+}
+
+.secondpartition:hover{
+  transform: rotate(180deg);
+  transition: all 0.65s ease-in-out;
+}
+.outer
+{
+  display: flex;
+ 
+}
 /* .irish
 {
   background-color: white;
@@ -328,6 +384,13 @@
       
     </div>
   </div>
+<!-- <div class="outer">
+  <div class="partition">
+
+  </div>
+  <div class="secondpartition"></div>
+</div>
+   -->
   
 </body>
 </html>
