@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reverse</title>
+</head>
+<body>
+    <script type="text/javascript">
+       
+       let strg=[];
+       strg =prompt("Enter the word that you want to reverse");
+       reverse(strg);
+       let result=reverse(str);
+       document.write(result);
+     
+       function reverse(str)
+       {    
+           
+           let rev=[];
+            let length=str.length;
+            let actlen=length-1;
+            for(let i=0;i<length;i++)
+            {
+                rev +=str[actlen-i];
+            //    rev += rev;
+
+           
+            }
+            document.write("result  after reversing the string:\n"+rev);
+           
+        }
+       
+
+
+        
+    </script>
+</body>
+</html>
