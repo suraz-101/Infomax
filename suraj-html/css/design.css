@@ -114,7 +114,7 @@ width: 100%;
 .home .right-col
 {
  height:70%;
-  background: url('image_6483441-2.png') no-repeat;
+  background: url('../assests/image_6483441-2.png') no-repeat;
   background-size: contain;
   background-position: center;
   width: 30%;
