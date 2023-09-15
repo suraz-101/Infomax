@@ -1,0 +1,164 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: auto;
+   
+}
+.main{
+width: 100%;
+}
+
+.header
+{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    color: white;
+
+}
+.header .logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+}
+
+.header .navbar
+{
+    width: 40%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header .navbar a
+{
+    position: relative;
+    color: coral;
+    text-decoration: none;
+    
+    /* border-radius: 20%;    */
+    font: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 1;
+    padding: 5px 20px;
+    /* overflow: hidden; */
+    
+}
+.header .navbar a::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: white;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: .5s;
+}
+.header .navbar a:hover::before, active{
+
+   width: 100%;
+   color: black;
+  
+
+}
+.home
+{
+    /* position: relative; */
+   
+    height: 100vh;
+    width: 100%;
+   
+   background-color: #000;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+   font-family: 'Courier New', Courier, monospace;
+}
+
+
+    
+
+
+.home h1{
+    letter-spacing:2px;
+   font-weight: bold;
+    font-size: 50px;
+}
+
+
+
+
+.home .left-col
+{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 50%;
+    height: 100%;
+    /* padding: 0 5%; */
+}
+.home .right-col
+{
+ height:70%;
+  background: url('../assests/image_6483441-2.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 30%;
+}
+
+
+.home h4{
+    color: coral;
+}
+.about
+{
+    height: 100vh;
+}
+.button{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.button a
+{
+    margin-top: 20px;
+   
+    text-decoration: none;
+    padding: 10px 20px;
+   border-radius:30px ;
+    border: 1px solid coral;
+    color: coral;
+    /* background-color: coral; */
+}
+
+.button :nth-child(1)
+{
+    background-color: coral;
+    color: white;
+}
+.button :nth-child(2)::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: coral;
+    width: 0%;
+    height: 100%;
+    /* z-index: -1; */
+    transition: .5s;
+}
+
