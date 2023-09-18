@@ -16,12 +16,22 @@
     <div class="header ">
         <div class="logo" >Su <Span>Raj</Span></div>
         <div class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">My Project</a>
-            <a href="#">Resume</a>
-            <a href="#">Contact</a>
-
+            <ul class="links">
+                <li>
+                    <a href="#" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#">Project</a>
+                </li>
+                <li>
+                    <a href="#">Resume</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
         </div>
+        <div class="hamburger "><a href=""><i class="fa fa-bars " onclick="showmenu()"></i></a></div>
       
     </div>
     <div class="home  ">
@@ -69,7 +79,11 @@
             duration: 650,
             once: true
           });
+
+          
         });
+
+        
       </script>
 </body>
 </html>

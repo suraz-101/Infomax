@@ -10,14 +10,21 @@ width: 100%;
 
 }
 
-.header
+.header 
 {
     background-color:  #122733;
-    display: flex;
-    justify-content: space-between;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
     padding: 0 10%;
     color: white;
 
+}
+.header ul{
+
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
 }
 .header .logo
 {
@@ -32,6 +39,7 @@ width: 100%;
 
 .header .navbar
 {
+     
     width: 40%;
     /* border: 1px solid white; */
     display: flex;
@@ -76,8 +84,7 @@ width: 100%;
 }
 .home
 {
-    /* position: relative; */
-   
+  
     height: 100vh;
     width: 100%;
    background-color: transparent;
@@ -85,13 +92,21 @@ width: 100%;
    display: flex;
    justify-content: center;
    align-items: center;
-  background: url('../assests/homebackground.JPG') no-repeat;
-  background-size: cover;
-  background-position: center;
+   background: url('../assests/project.jpg') no-repeat;
+    background-size:cover ;
+    background-position: center;
    font-family: 'Courier New', Courier, monospace;
 }
 
-
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+}
     
 
 
@@ -212,7 +227,24 @@ width: 100%;
     height: 100vh;
     width: 100%;
     background-color: black;
+    background: transparent;
+  background: url('../assests/project.jpg');
+  background-position: center;
+  background-size: cover;
+
+    
 }
+
+.project::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+}
+    
 
 .project .title
 {
@@ -222,8 +254,8 @@ width: 100%;
     justify-content: center;
     padding: 10px 0;
     font-family: 'Courier New', Courier, monospace;
-    /* font-weight: bold; */
-    font-style: italic;
+    font-weight: bold;
+
    
 
 }
@@ -234,8 +266,50 @@ width: 100%;
     text-decoration: underline;
     transition: 0.3s;
     cursor: pointer;
+    background:transparent;
 }
 
+.main .header .hamburger 
+{
+    height: 100%;
+    display: none;
+   
+    
+}
+
+.main .header .hamburger i{
+    color: coral;
+}
+
+
+@media only screen and (max-width: 1076px) {
+
+    .main .header{
+        padding: 5px 0;
+        display: flex;
+        justify-content: space-around;
+    }
+ 
+    .main .header ul
+   {
+       
+    display: none;
+    position: absolute;
+    border: 1px solid white;
+    top: 0;
+    right: 0;
+     width: 100%;
+   
+   }
+
+
+
+   .main .header .hamburger
+   {
+       display: block;
+   }
+
+  }
 
 
 
