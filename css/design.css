@@ -5,6 +5,11 @@ body{
     overflow: auto;
    
 }
+
+html{
+    scroll-behavior: smooth;
+    transition: 0.3s;
+}
 .main{
 width: 100%;
 
@@ -12,7 +17,7 @@ width: 100%;
 
 .header 
 {
-    background-color:  #122733;
+    background-color:   black;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -28,12 +33,14 @@ width: 100%;
 }
 .header .logo
 {
+    /* border: 1px solid white; */
     display: flex;
     justify-content: center;
     align-items: center;
     font: 100px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    
     
 }
 
@@ -87,18 +94,16 @@ width: 100%;
   
     height: 100vh;
     width: 100%;
-   background-color: transparent;
+    /* background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); */
    color: white;
    display: flex;
    justify-content: center;
    align-items: center;
-   background: url('../assests/project.jpg') no-repeat;
-    background-size:cover ;
-    background-position: center;
+  background-color:  black;
    font-family: 'Courier New', Courier, monospace;
 }
 
-.home::before {
+/* .home::before {
     content: "";
     position: absolute;
     top: 0px;
@@ -107,14 +112,13 @@ width: 100%;
     left: 0px;
     background-color: rgba(0,0,0,0.25);
 }
-    
+     */
 
 
 .home h1{
     letter-spacing:2px;
    font-weight: bold;
     font-size: 50px;
-    /* position: relative; */
 }
 
 
@@ -138,7 +142,7 @@ width: 100%;
   background-size: contain;
   background-position: center;
   width: 30%;
-  opacity: 0.5;
+  opacity: 0.8;
  
 }
 
@@ -222,28 +226,17 @@ width: 100%;
     color: black;
 
 }
-.project
+.project,#projects
 {
    
     width: 100%;
     background-color: black;
-    background: transparent;
-  background: url('../assests/project.jpg');
-  background-position: center;
-  background-size: cover;
+   
 
     
 }
 
-.project::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(0,0,0,0.25);
-}
+
     
 
 .project .title
@@ -284,8 +277,8 @@ width: 100%;
 .project .container .card
 {
     
-    background-color: transparent;
-    color: white;
+   background-color: black;
+    /* color: white; */
     padding: 20px;
 }
 
@@ -297,10 +290,10 @@ width: 100%;
 {
     height: 80%;
     border :1px solid white;
-    
+/*     
     background: url('../assests/item1.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     
     border-radius: 5px;
 
@@ -315,12 +308,48 @@ width: 100%;
 .project .container .card .inner-card .button-sec a
 {
     text-decoration: none;
-    color: white;
-    border: 1px solid white;
+    color: coral;
+    border: 1px solid black;
     padding: 2px 5px;
     border-radius: 5px;
 }
 
+.Resume
+
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.Resume .cv
+{
+    height: 80%;
+    width: 70%;
+  
+
+}
+.Resume img{
+    height: 100%;
+    width: 85%;
+}
+.downloadbutton
+{
+    /* border: 1px solid black; */
+    text-align: center;
+    padding-top: 50px;
+    
+}
+.downloadbutton a{
+    text-decoration: none;
+    color: coral;
+    border: 1px solid black;
+    padding: 4px 10px;
+    border-radius: 4px ;
+}
 @media only screen and (max-width: 1076px) {
 
     .main .header{
