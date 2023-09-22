@@ -17,14 +17,21 @@ width: 100%;
 
 .header 
 {
-    background-color:   black;
+    background-color:   transparent;
    display: flex;
    justify-content: space-between;
    align-items: center;
     padding: 0 10%;
     color: white;
-
+    position: fixed;
+    /* border: 1px solid white; */
+    width: 100%;
+    z-index: 2;
 }
+
+
+    
+
 .header ul{
 
     display: flex;
@@ -40,8 +47,28 @@ width: 100%;
     font: 100px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    border: 1px solid coral;
+    height: 50px;
+    width: 50px;
+    animation: animate2 0.2s linear infinite;
+
     
     
+}
+@keyframes animate2 {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.header  h6{
+    position: absolute;
+    text-align: center;
 }
 
 .header .navbar
@@ -291,7 +318,7 @@ width: 100%;
 .project .container .card .inner-card .image-sec
 {
     height: 80%;
-    /* border: 1px solid white; */
+    /* border: 0.01px solid white; */
     overflow: hidden;
     /* border :1px solid white; */
     position: relative;
