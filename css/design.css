@@ -163,7 +163,7 @@ width: 100%;
 .button a
 {
     margin-top: 20px;
-   
+    cursor: pointer;
     text-decoration: none;
     padding: 10px 20px;
    border-radius:30px ;
@@ -201,6 +201,7 @@ width: 100%;
     position: fixed;
     top: 400px;
     background-color: transparent;
+    z-index: 1;
 }
 .media i{
     color: white;
@@ -285,19 +286,62 @@ width: 100%;
 .project .container .card .inner-card
 {
     height: 300px;
+   
 }
 .project .container .card .inner-card .image-sec
 {
     height: 80%;
-    border :1px solid white;
+    /* border: 1px solid white; */
+    overflow: hidden;
+    /* border :1px solid white; */
+    position: relative;
 /*     
     background: url('../assests/item1.jpg');
     background-position: center;
     background-size: cover; */
     
     border-radius: 5px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.project .container .card .inner-card .image-sec::before{
+    content: '';
+    background: linear-gradient(transparent, #ff3c7b,#ff3c7b,#ff3c7b, transparent );
+    height: 400px;
+    width: 100px;
+    position: absolute;
+    top: -80px;
+    /* transform: translate(-50%, -50%); */
+    animation: animate1  3s linear infinite ;
+    
+}
+
+@keyframes animate1 {
+    0%
+    {
+        transform:  rotate(360deg);
+    
+    }
+    100% 
+    {
+        transform:  rotate(0deg);
+    }
+    
+}
+.project .container .card .inner-card .image-sec::after{
+    content: '';
+    background-color: black;
+    height: 98%;
+    width: 98%;
+    position: absolute;
+    /* top: -80px; */
+    /* transform: translate(-50%, -50%); */
+    /* animation: animate1  3s linear infinite ; */
+    
+}
+
 .project .container .card .inner-card .button-sec
 {
     height: 20%;
@@ -323,15 +367,65 @@ width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: black ;
+   
    
 }
 .Resume .cv
 {
-    height: 80%;
-    width: 70%;
-  
+   border: 1px solid black;
+   height: 500px;
+   width: 300px;
+   background-color: black;
+   position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
 
 }
+
+.Resume .cv::before{
+    content: '';
+    background: linear-gradient(transparent, #ff3c7b,#ff3c7b,#ff3c7b );
+    height: 700px;
+    width: 200px;
+    position: absolute;
+    top: -80px;
+    right: 50px;
+    /* transform: translate(-50%, -50%); */
+    animation: animate  3s linear infinite ;
+    
+
+    
+
+
+}
+
+.Resume .cv::after{
+    content: '';
+    background-color: black;
+    
+    position: absolute;
+    height: 99%;
+    width: 98%;
+
+}
+
+@keyframes animate {
+    0%
+    {
+        transform:  rotate(360deg);
+    
+    }
+    100% 
+    {
+        transform:  rotate(0deg);
+    }
+    
+}
+
 .Resume img{
     height: 100%;
     width: 85%;
