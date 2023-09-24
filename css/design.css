@@ -2,7 +2,7 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow: auto;
+    /* overflow: auto; */
    
 }
 
@@ -47,14 +47,18 @@ width: 100%;
     font: 100px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    border: 1px solid coral;
+    /* border: 1px solid coral; */
     height: 50px;
     width: 50px;
     animation: animate2 0.2s linear infinite;
-
-    
-    
+    animation-play-state: paused;
+    overflow: hidden;
+    border-radius: 50%;   
 }
+
+
+
+
 @keyframes animate2 {
     0%
     {
@@ -71,6 +75,76 @@ width: 100%;
     text-align: center;
 }
 
+.header .logo .outer-circle
+{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+    overflow: hidden;
+    /* border: 1px solid white; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-top: 2px solid white; */
+
+}
+.header .logo .animated-circle
+{
+    /* content: ''; */
+    height: 80px;
+    width: 20px;
+    /* border-top: 2px solid; */
+    background: linear-gradient(transparent, coral,#ff3c7b,yellow, transparent );    
+    position: absolute;
+    top: -15px;
+    right: 15px;
+    animation: circle 1s linear infinite;
+}
+
+
+
+@keyframes circle {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+    
+}
+.header .logo .inner-circle
+{
+    /* content: ''; */
+    height: 90%;
+    width: 90%;
+    background-color: black;
+    position: absolute;
+   border-radius: 50%;
+    position: absolute;
+    /* background:url('../assests/image_6483441-2.png');
+    background-size: cover; */
+    background-position:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.header .logo .inner-circle .circle{
+
+    position: absolute;
+    height: 70%;
+    width: 70%;
+    border: 2px solid gray;
+    border-radius: 50%;
+    z-index: 2;
+  
+}
 .header .navbar
 {
      
@@ -94,7 +168,8 @@ width: 100%;
     font: 50px;
     font-family: 'Courier New', Courier, monospace;
     z-index: 1;
-    padding: 5px 20px;
+    padding: 5px 10px;
+    margin-right: 10px;
     /* overflow: hidden; */
     
 }
@@ -103,7 +178,7 @@ width: 100%;
     position: absolute;
     top:0;
     left:0;
-    background-color: white;
+    border-bottom: 2px solid gray;
     width: 0%;
     height: 100%;
     z-index: -1;
@@ -170,6 +245,8 @@ width: 100%;
   background-position: center;
   width: 30%;
   opacity: 0.8;
+  border-radius: 50%;
+ 
  
 }
 
@@ -359,7 +436,7 @@ width: 100%;
 }
 .project .container .card .inner-card .image-sec::after{
     content: '';
-    background-color: black;
+    background-color: gray;
     height: 98%;
     width: 98%;
     position: absolute;
@@ -485,9 +562,9 @@ width: 100%;
     display: none;
     position: absolute;
     border: 1px solid white;
-    top: 0;
-    right: 0;
-     width: 100%;
+    top: -100;
+    right: -100;
+    width: 100%;
    
    }
 
