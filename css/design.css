@@ -173,16 +173,31 @@ width: 100%;
     /* overflow: hidden; */
     
 }
+
+.header .navbar .contact
+{
+    background-color: coral;
+    color: black;
+    padding: 10px;
+    border-radius: 2px ;
+}
+
+.header .navbar .contact:hover{
+    background-color: transparent;
+    color: coral;
+    border: 2px solid coral;
+}
 .header .navbar a::before{
     content:'';
     position: absolute;
     top:0;
     left:0;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid coral;
     width: 0%;
     height: 100%;
     z-index: -1;
     transition: .5s;
+    
 }
 .header .navbar a:hover::before, active{
 
@@ -264,13 +279,24 @@ width: 100%;
     align-items: center;
     background: transparent;
 }
+
+.button a:nth-child(1)
+{
+    color: black;
+    
+}
+
+.button a:nth-child(1):hover 
+{
+    color: white;
+}
 .button a
 {
     margin-top: 20px;
     cursor: pointer;
     text-decoration: none;
     padding: 10px 20px;
-   border-radius:30px ;
+   border-radius:5px ;
     border: 1px solid coral;
     color: coral;
     /* background-color: coral; */
