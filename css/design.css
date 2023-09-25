@@ -250,7 +250,7 @@ width: 100%;
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
-    width: 50%;
+    /* width: 50%; */
     height: 100%;
     /* padding: 0 5%; */
 }
@@ -260,7 +260,7 @@ width: 100%;
   background: url('../assests/image_6483441-2.png') no-repeat;
   background-size: contain;
   background-position: center;
-  width: 30%;
+  /* width: 30%; */
   opacity: 0.8;
   border-radius: 50%;
  
