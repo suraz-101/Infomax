@@ -79,10 +79,10 @@ width: 100%;
 {
     height: 50px;
     width: 50px;
-    background-color: black;
+    background-color: transparent;
     border-radius: 50%;
     overflow: hidden;
-    /* border: 1px solid white; */
+    border: 1px solid gray;
     position: relative;
     display: flex;
     justify-content: center;
@@ -120,6 +120,7 @@ width: 100%;
 {
     /* content: ''; */
     height: 90%;
+    border: 1px solid gray;
     width: 90%;
     background-color: black;
     position: absolute;
@@ -209,7 +210,7 @@ width: 100%;
 .home
 {
   
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     /* background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); */
    color: white;
@@ -217,7 +218,8 @@ width: 100%;
    justify-content: center;
    align-items: center;
   background-color:  black;
-   font-family: 'Courier New', Courier, monospace;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 5px;
 }
 
 /* .home::before {
@@ -334,10 +336,10 @@ width: 100%;
     z-index: 1;
 }
 .media i{
-    color: white;
+    color: coral;
     height: 40px;
     width: 40px;
-    border:1px solid grey;
+    border:1px solid coral;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -361,7 +363,7 @@ width: 100%;
 {
    
     width: 100%;
-    background-color: black;
+    background-color: #12486B;
    
 
     
@@ -377,7 +379,8 @@ width: 100%;
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    font-family: 'Courier New', Courier, monospace;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   letter-spacing: 5px;
     font-weight: bold;
 
    
@@ -385,9 +388,7 @@ width: 100%;
 }
 
 .project .title span{
-    color: coral;
-   
-    text-decoration: underline;
+    color: white;
     transition: 0.3s;
     cursor: pointer;
     background:transparent;
@@ -405,12 +406,35 @@ width: 100%;
     color: coral;
 }
 
+.about{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.about .section
+{
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    font-display: center;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .project .container .card
 {
-    
-   background-color: black;
+    border: 1px solid #12486B;
+background-color: transparent;
     /* color: white; */
     padding: 20px;
+
 }
 
 .project .container .card .inner-card
@@ -421,30 +445,27 @@ width: 100%;
 .project .container .card .inner-card .image-sec
 {
     height: 80%;
-    /* border: 0.01px solid white; */
     overflow: hidden;
-    /* border :1px solid white; */
     position: relative;
-/*     
-    background: url('../assests/item1.jpg');
-    background-position: center;
-    background-size: cover; */
-    
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 5px 5px 15px 5px grey;
+    
 }
 
 .project .container .card .inner-card .image-sec::before{
     content: '';
-    background: linear-gradient(transparent, #ff3c7b,#ff3c7b,#ff3c7b, transparent );
+    background: linear-gradient(transparent, #ff3c7b,black,black, transparent );
     height: 400px;
     width: 100px;
     position: absolute;
     top: -80px;
+    
     /* transform: translate(-50%, -50%); */
     animation: animate1  3s linear infinite ;
+    /* animation-play-state: paused; */
     
 }
 
@@ -482,8 +503,8 @@ width: 100%;
 .project .container .card .inner-card .button-sec a
 {
     text-decoration: none;
-    color: coral;
-    border: 1px solid black;
+    color: white;
+    border: 1px solid white;
     padding: 2px 5px;
     border-radius: 5px;
 }
