@@ -279,11 +279,7 @@ align-items: center;
 .home h4{
     color: coral;
 }
-.about
-{
-    height: auto;
-    padding: 70px 0;
-}
+
 .button{
     display: flex;
     justify-content: space-evenly;
@@ -416,17 +412,25 @@ align-items: center;
 }
 
 .about{
+    /* position:relative; */
+    height: auto;
+    /* padding: 70px 0; */
     /* height: 50vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
    
 }
 .about .section
 {
-    height: 100%;
-    width: 50%;
+    position: relative;
+    top: -100px;
+    height: auto;
+    width: 70%;
+    padding: 20px 20px;
+    background-color: white;
     /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
@@ -435,6 +439,48 @@ align-items: center;
     font-display: center;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 5px 5px 20px gray;
+    border-radius: 10px;
+}
+
+
+.about .section .icons
+{
+    /* border: 1px solid gray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    /* border-radius: 50%; */
+    
+}
+
+
+.about .section .icon-wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about .section .icon-wrapper .icons .image{
+    box-shadow: 5px 5px 30px gray;
+    padding:15px;
+    border-radius: 50%;
+    background-color: white;
+}
+.about .section .icon-wrapper .icons  h5{
+    font-weight: bold;
+}
+.about .section img{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid gray; */
+   
+    /* border-radius: 50%; */
 }
 
 .project .container .card
@@ -634,6 +680,7 @@ background-color: transparent;
    
 
   }
+ 
 
 
 
