@@ -224,7 +224,7 @@ align-items: center;
    align-items: center;
   background-color:  black;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 
 /* .home::before {
@@ -333,7 +333,7 @@ align-items: center;
     align-items: flex-end;
     /* border: 1px solid red; */
     width: 98%;
-    height: 200px;
+    height: 250px;
     margin: auto;
     position: fixed;
     top: 400px;
@@ -344,7 +344,7 @@ align-items: center;
     color: coral;
     height: 40px;
     width: 40px;
-    border:1px solid coral;
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -358,11 +358,29 @@ align-items: center;
     text-decoration: none;
 }
 
-.media i:hover{
-    background-color: coral;
+.media .fa-facebook{
+    background-color: #2d51a8;
     transition: 0.5s;
     color: black;
+    border:1px solid #2d51a8;
 
+}
+
+.media .fa-github{
+    background-color: #6cc644;
+    color: black;
+}
+
+.media .fa-instagram
+{
+    background-color: rgb(228, 64, 95);
+    color: black;
+}
+
+.media .fa-envelope
+{
+background-color: #34A853;
+color: black;
 }
 .project,#projects
 {
@@ -442,29 +460,46 @@ align-items: center;
     box-shadow: 5px 5px 20px gray;
     border-radius: 10px;
 }
+.skills{
+    height: auto;
+    width: 70%;
+    padding: 20px 20px;
+    background-color: white;
+   
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    font-display: center;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+
+}
 
 
-.about .section .icons
+.about .section .icons, .skills .icon-wrapper .icons
 {
     /* border: 1px solid gray; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding: 50px 0px;
+
     /* border-radius: 50%; */
     
 }
 
 
 
-.about .section .icon-wrapper
+.about .section .icon-wrapper, .skills .icon-wrapper
 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.about .section .icon-wrapper .icons .image{
+.about .section .icon-wrapper .icons .image, .skills .icon-wrapper .icons .image{
     box-shadow: 5px 5px 30px gray;
     padding:15px;
     border-radius: 50%;
@@ -473,7 +508,7 @@ align-items: center;
 .about .section .icon-wrapper .icons  h5{
     font-weight: bold;
 }
-.about .section img{
+.about .section img, .skills .icon-wrapper .icons img{
     height: 50px;
     width: 50px;
     display: flex;
@@ -680,6 +715,53 @@ background-color: transparent;
 
    
 
+  }
+  @media only screen and (max-width: 800px)
+  {
+
+.home .left-col
+{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 5px;
+   
+}
+
+.home .left-col .button a
+{
+    margin-top: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px 5px;
+   border-radius:5px ;
+    border: 1px solid coral;
+    color: coral;
+    /* background-color: coral; */
+}
+
+.home .left-col .button a:nth-child(1)
+{
+    color: black;
+}
+
+.about .section
+{
+   
+    width: 100%;
+  
+   
+}
+
+.about .section .icon-wrapper .icons p{
+    display: none;
+}
+
+.about .section .icon-wrapper .icons:hover p {
+display: block;
+
+};
   }
  
 
