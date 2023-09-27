@@ -8,7 +8,7 @@ body{
 
 html{
     scroll-behavior: smooth;
-    transition: 0.3s;
+    
 }
 .main{
 width: 100%;
@@ -387,7 +387,7 @@ color: black;
    
     width: 100%;
     background-color: #12486B;
-   
+   padding: 50px 0px;
 
     
 }
@@ -530,23 +530,50 @@ background-color: transparent;
 
 .project .container .card .inner-card
 {
-    height: 300px;
+    height: auto;
+    box-shadow: 5px 5px 15px 5px black;
+    background-color: white;
    
+}
+.project .container .card .inner-card h4{
+    color: coral;
+    font-style: bold;
+}
+.project .container .card .inner-card p{
+    color: black;
+}
+.project .container .card .inner-card a{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: large;
 }
 .project .container .card .inner-card .image-sec
 {
-    height: 80%;
+    height: 150px;
+    width: 200px;
+  
     overflow: hidden;
     position: relative;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 5px 5px 15px 5px grey;
+   
     
 }
+.project .container .card .inner-card .image-sec img{
+    height: 100%;
+    width: 100%;
+}
 
-.project .container .card .inner-card .image-sec::before{
+.project .container .card .inner-card  .description
+{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* .project .container .card .inner-card .image-sec::before{
     content: '';
     background: linear-gradient(transparent, #ff3c7b,black,black, transparent );
     height: 400px;
@@ -554,13 +581,13 @@ background-color: transparent;
     position: absolute;
     top: -80px;
     
-    /* transform: translate(-50%, -50%); */
-    animation: animate1  3s linear infinite ;
-    /* animation-play-state: paused; */
     
-}
+    animation: animate1  3s linear infinite ;
+   
+    
+} */
 
-@keyframes animate1 {
+/* @keyframes animate1 {
     0%
     {
         transform:  rotate(360deg);
@@ -571,18 +598,16 @@ background-color: transparent;
         transform:  rotate(0deg);
     }
     
-}
-.project .container .card .inner-card .image-sec::after{
+} */
+/* .project .container .card .inner-card .image-sec::after{
     content: '';
     background-color: gray;
     height: 98%;
     width: 98%;
     position: absolute;
-    /* top: -80px; */
-    /* transform: translate(-50%, -50%); */
-    /* animation: animate1  3s linear infinite ; */
+   
     
-}
+} */
 
 .project .container .card .inner-card .button-sec
 {
@@ -594,7 +619,7 @@ background-color: transparent;
 .project .container .card .inner-card .button-sec a
 {
     text-decoration: none;
-    color: white;
+    color: black;
     border: 1px solid white;
     padding: 2px 5px;
     border-radius: 5px;
