@@ -21,7 +21,7 @@ align-items: center;
 
 .header 
 {
-    background-color:   transparent;
+    background-color:   black;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -388,7 +388,7 @@ color: black;
     width: 100%;
     background-color: #12486B;
    padding: 50px 0px;
-
+  
     
 }
 
@@ -458,7 +458,7 @@ color: black;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-shadow: 5px 5px 20px gray;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .skills{
     height: auto;
@@ -477,40 +477,100 @@ color: black;
 
 }
 
+.aboutme
+{
+    height: auto;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 30px gray;
+    border-radius: 5px;
+}
 
-.about .section .icons, .skills .icon-wrapper .icons
+.aboutme .skills .contact-details .image{
+    height: 200px;
+    background: url('../assests/image_6483441-2.png') no-repeat;
+    background-size: center;
+    background-size: contain;
+    
+}
+
+.aboutme .skills .contact-details .details{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid black; */
+    text-align: start;
+    font-size:15px;
+    
+}
+.aboutme .skills .contact-details .details .title-s
+{
+    font-weight: bold;
+}
+.aboutme .description h3{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.aboutme .description p{
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+.about .section .icons
 {
     /* border: 1px solid gray; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 0px;
+    padding: 20px 0px;
 
     /* border-radius: 50%; */
     
 }
 
 
-
-.about .section .icon-wrapper, .skills .icon-wrapper
+.about .section .icon-wrapper
 {
     display: flex;
+    
     align-items: center;
     justify-content: center;
 }
-.about .section .icon-wrapper .icons .image, .skills .icon-wrapper .icons .image{
+.about .section .icon-wrapper .icons .image{
     box-shadow: 5px 5px 30px gray;
     padding:15px;
     border-radius: 50%;
     background-color: white;
 }
+.skills .icon-wrapper .icons .image
+{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 10%;
+    box-shadow: 5px 5px 30px gray;
+}
 .about .section .icon-wrapper .icons  h5{
     font-weight: bold;
 }
-.about .section img, .skills .icon-wrapper .icons img{
+.about .section img{
     height: 50px;
     width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid gray; */
+   
+    /* border-radius: 50%; */
+}
+.skills .icon-wrapper .icons img{
+    height: 30px;
+    width: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
