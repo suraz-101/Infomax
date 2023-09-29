@@ -13,8 +13,13 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+
+<!-- main div starts here  -->
     <div class="main ">
+
+        <!-- Navbar Starts here -->
     <div class="header ">
+        <!-- logo div starts here -->
         <div class="logo" data-aos="fade-right">
          <div class="outer-circle">
             <div class="animated-circle"></div>
@@ -27,11 +32,13 @@
         </div>
             
         </div>
+        <!-- logo div ends here -->
        
+        <!-- Nav option starts here -->
         <div class="navbar">
             <ul class="links" data-aos="fade-left">
                 <li>
-                   <a href=".home" class="active">Home</a>
+                   <a href="#home" class="active">Home</a>
                 </li>
                 <li>
                     <a href="#aboutme">About</a>
@@ -47,10 +54,15 @@
                 </li>
             </ul>
         </div>
+        <!-- Nav options ends here -->
+        <!-- Hamberger menu  -->
         <div class="hamburger " data-aos="fade-left"><a href=""><i class="fa fa-bars " onclick="showmenu()"></i></a></div>
       
     </div>
-    <div class="home row container-fluid" >
+    <!-- End of the nav bar -->
+
+    <!-- Home page starts here -->
+    <div class="home row container-fluid" id="home">
         <div class="left-col  col-lg-6 col-md-5 col-sm-12  "  data-aos="fade-up" >
             <h1>Hi,<br>I'am Suraj Pandey </h1>
                <br> <h4>Web App Developer</h4>
@@ -68,6 +80,8 @@
             <!-- <img src="./assests/image_6483441-2.png" alt=""> -->
         </div>
     </div>
+    <!-- End of the Home page -->
+    <!-- Media Starts here -->
     <div class="media" data-aos="fade-in">
         <a href="https://www.facebook.com/suraz.pandey.73"><i class="fa fa-facebook" id="facebook"></i></a>
         <a href="https://github.com/suraz-101"><i class="fa fa-github" id="github"></i></a>
@@ -75,8 +89,9 @@
        <a href="gmail.com"><i class="fa fa-envelope" ></i></a>
        <a href="#"><i class="fa fa-arrow-up"></i></a>
     </div>
+    <!-- Media div ends here -->
     
-       
+     <!-- expertise page starts here   -->
   <div class="container-fluid about row ">
       
       <div class="section col-lg-12 col-md-12 col-sm-12">
@@ -119,15 +134,17 @@
 
       
   </div>
+  <!-- expertise page ends here -->
 
+  <!-- About page with skills starts here -->
   <div id="aboutme" class="aboutme container d-flex justify-content-center align-item-center row ">
     <div id="skills" class="skills container-fluid  col-lg-6 col-md-6 col-sm-12">
         <div class="contact-details row  ">
             <div class="  container col-lg-5">
-                <div class="container image col-lg-10 "> <img src="./assests/image_6483441-2.png" alt=""></div>
+                <div class="container image col-lg-10 " data-aos="fade-in"> <img src="./assests/image_6483441-2.png" alt=""></div>
             </div>
             <div class=" col-lg-7 col-sm-6 col-md-7">
-                <div class="details">
+                <div class="details" data-aos="fade-left">
                   <p><span class="title-s">Name: </span> <span>Suraj Pandey</span></p>
                   <p><span class="title-s">Profile: </span> <span>Front End Developer</span></p>
                   <p><span class="title-s">Email: </span> <span>surazpandey101@gmail.com</span></p>
@@ -177,7 +194,7 @@
           </div>
       </div>
 
-    <div id="description" class="description container col-lg-6 col-md-6 col-sm-12 p-4">
+    <div id="description" class="description container col-lg-6 col-md-6 col-sm-12 p-4" data-aos="fade-left">
         <h3>About Me</h3>
         <p>
             Hello there! I'm Suraj Pandey, a passionate Front-End Developer with a creative flair and a strong penchant for turning ideas into visually stunning and user-friendly websites. I thrive on the intersection of design and technology, constantly seeking to strike that perfect balance between aesthetics and functionality.
@@ -188,10 +205,13 @@
         </p>
     </div>            
 </div>
+<!-- About page ends here -->
+
+<!-- Project Page Starts here -->
     <div id= "projects" class="project container-fluid ">
         <div class="title text-white" data-aos="fade-in"> <span>My Projects</span></div>
         <div class="container  d-flex row m-auto " data-aos="fade-up">
-            <div class="card container col-lg-4 col-md-4 col-sm-5  ">
+            <div class="card container col-lg-4 col-md-5 col-sm-5  ">
                 <div class="inner-card  border p-4">
                     <div class="image-sec border m-auto "><img src="./assests/portfolio website.png" alt=""></div>
                     <div class="description"><h4>Portfolio Website</h4><p>This is the portfolio website of my own which you are viewing currently. This web describes my profile and the skills I am expertise in </p></div>
@@ -199,7 +219,7 @@
                 </div>
               
             </div>
-            <div class="card container col-lg-4 col-md-4 col-sm-5  ">
+            <div class="card container col-lg-4 col-md-5 col-sm-5  ">
                 <div class="inner-card  border p-4">
                     <div class="image-sec border m-auto "><img src="./assests/e-commerce.png" alt=""></div>
                     <div class="description"><h4>E-commerce Web App</h4><p>Integration of AR in E-commerce Application. It is developed in .net Framework with C# and Three.js</p></div>
@@ -207,7 +227,7 @@
                 </div>
               
             </div>
-            <div class="card container col-lg-4 col-md-4 col-sm-5  ">
+            <div class="card container col-lg-4 col-md-5 col-sm-5  ">
                 <div class="inner-card  border p-4">
                     <div class="image-sec border m-auto "><img src="./assests/projectbackground.jpg" alt=""></div>
                     <div class="description"><h4>Banking System</h4><p>This is console based banking system developed using C programming language. This is the very first project that i worked on</p></div>
@@ -220,14 +240,16 @@
               
             </div>
         </div>
-
+<!-- Projects page ends here -->
        
+      
      
+        <!-- Footer starts here -->
       <div class="footer p-4">Footer</div>
 
-    
+    <!-- Footer ends here -->
     </div>
-   
+   <!-- end of the main div -->
         
         
     <script src="../../assets/vendor/aos/dist/aos.js"></script>

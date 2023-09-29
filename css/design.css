@@ -791,6 +791,8 @@ background-color: transparent;
 }
 
 
+
+
 @media only screen and (max-width: 1076px) {
 
     .main .header{
@@ -801,20 +803,27 @@ background-color: transparent;
  
     .main .header ul
    {
-       
+       background-color: black;
     display: none;
     position: absolute;
     border: 1px solid white;
-    top: -100;
-    right: -100;
-    width: 100%;
+   top: 40px;
+    right: -150%;
+    width: 500px;
+    height: 100vh;
    
+   }
+   .main .header ul li 
+   {
+       margin-bottom: 20px;
    }
 
 
 
    .main .header .hamburger
    {
+       z-index: 2;
+       border: 1px solid white;
        display: block;
    }
 
