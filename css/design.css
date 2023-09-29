@@ -122,6 +122,7 @@ align-items: center;
 }
 .header .logo .inner-circle
 {
+
     /* content: ''; */
     height: 90%;
     border: 1px solid gray;
@@ -149,6 +150,12 @@ align-items: center;
     border-radius: 50%;
     z-index: 2;
   
+}
+.header .logo .inner-circle  img{
+
+    height: 100%;
+    width: 100%;
+
 }
 .header .navbar
 {
@@ -526,6 +533,8 @@ color: black;
 }
 
 
+
+
 .about .section .icons
 {
     /* border: 1px solid gray; */
@@ -780,6 +789,8 @@ background-color: transparent;
     padding: 4px 10px;
     border-radius: 4px ;
 }
+
+
 @media only screen and (max-width: 1076px) {
 
     .main .header{
@@ -856,6 +867,16 @@ background-color: transparent;
 display: block;
 
 };
+
+ #skills
+{
+    order: 2;
+}
+
+ #description
+{
+    order:1;
+}
   }
  
 
