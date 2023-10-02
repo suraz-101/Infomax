@@ -211,9 +211,9 @@ align-items: center;
     transition: .5s;
     
 }
-.header .navbar a:hover::before, active{
+.header .navbar a:hover::before{
 
-   width: 100%;
+   width: 60%;
    color: black;
   
 
@@ -497,6 +497,8 @@ color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+
     /* background: url('../assests/image_6483441-2.png') no-repeat;
     background-size: center;
     background-size: contain; */
@@ -506,8 +508,12 @@ color: black;
     height: 180px;
     width: 150px;
     box-shadow: 2px 2px 10px gray;
-    border-radius: 5px;
+
+
+    /* border-radius: 5px; */
 }
+
+
 
 .aboutme .skills .contact-details .details{
     display: flex;
@@ -592,26 +598,26 @@ color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid gray; */
-   
-    /* border-radius: 50%; */
 }
 
 .project .container .card
 {
     border: 1px solid #12486B;
-background-color: transparent;
-    /* color: white; */
+    background-color: transparent;
     padding: 20px;
+
 
 }
 
 .project .container .card .inner-card
 {
     height: auto;
-    box-shadow: 5px 5px 15px 5px black;
+    box-shadow: 5px 5px 15px 5px rgb(72, 71, 71);
     background-color: white;
    
+}
+.project .container .card .inner-card:hover{
+    box-shadow: 10px 10px 20px black;
 }
 .project .container .card .inner-card h4{
     color: coral;
@@ -627,8 +633,8 @@ background-color: transparent;
 }
 .project .container .card .inner-card .image-sec
 {
-    height: 150px;
-    width: 200px;
+    height: 200px;
+    /* width: 200px; */
   
     overflow: hidden;
     position: relative;
@@ -642,6 +648,7 @@ background-color: transparent;
 .project .container .card .inner-card .image-sec img{
     height: 100%;
     width: 100%;
+    /* border: 1px solid red; */
 }
 
 .project .container .card .inner-card  .description
@@ -758,6 +765,83 @@ background-color: transparent;
 
 }
 
+
+body, h1, h2, p, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add some basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.contact-us {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 0px;
+}
+
+.contact-us h1 {
+  text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-us p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Style the contact form */
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form fields */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+/* Style the submit button */
+.submit-btn {
+    background-color: coral;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #555;
+}
 @keyframes animate {
     0%
     {
@@ -788,6 +872,28 @@ background-color: transparent;
     border: 1px solid black;
     padding: 4px 10px;
     border-radius: 4px ;
+}
+
+.footer
+{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.footer .logo 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .logo img{
+    height:100px;
+    width: 80px;
+   padding-bottom: 20px;
+    /* border: 1px solid white; */
 }
 
 
