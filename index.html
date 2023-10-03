@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/design.css">
     <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -36,7 +37,10 @@
        
         <!-- Nav option starts here -->
         <div class="navbar">
-            <ul class="links" data-aos="fade-left">
+            <ul id="links" class="links" data-aos="fade-left">
+             
+              <li><i class="fa fa-close " id="close" ></i></li>
+               
                 <li>
                    <a href="#home" class="active">Home</a>
                 </li>
@@ -52,11 +56,13 @@
                 <li>
                     <a href="#contactus" class="contact">Contact</a>
                 </li>
+                
             </ul>
         </div>
         <!-- Nav options ends here -->
         <!-- Hamberger menu  -->
-        <div class="hamburger " data-aos="fade-left"><a href=""><i class="fa fa-bars " onclick="showmenu()"></i></a></div>
+        <div  class="hamburger " data-aos="fade-left"><a><i class="fa fa-bars " id="hamburger" ></i></a></div>
+       
       
     </div>
     <!-- End of the nav bar -->
@@ -235,6 +241,14 @@
                 </div>
               
             </div>
+            <div class="card container col-lg-4 col-md-5 col-sm-5  ">
+                <div class="inner-card  border p-4">
+                    <div class="image-sec border m-auto "><img src="./assests/Courrier_management_system.png" alt=""></div>
+                    <div class="description"><h4>Courrier Management System</h4></div>
+                  <div class="d-flex justify-content-center align-item-center"><a href="https://github.com/suraz-101/Courrier_Management_System" >Check in GitHub</a></div>
+                </div>
+              
+            </div>
            
            
               
@@ -285,7 +299,28 @@
         
     <script src="../../assets/vendor/aos/dist/aos.js"></script>
     <script>
+
+const bar = document.getElementById('hamburger');
+      const nav=document.getElementById('links');
+        const close = document.getElementById('close');
+
+        if(bar){
+            bar.addEventListener('click', () =>{
+                nav.classList.add('active');
+               
+            })
+        }
+      
+      if(close)
+      {
+          close.addEventListener('click',() => {
+              nav.classList.remove('active');
+          })
+      }
+    
+
         $(document).on('ready', function () {
+          
           // initialization of aos
           AOS.init({
             duration: 650,
@@ -294,6 +329,9 @@
 
           
         });
+      
+    
+
 
         
       </script>
