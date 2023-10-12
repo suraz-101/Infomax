@@ -227,7 +227,7 @@ align-items: center;
 }
 .home
 {
-  
+  /* position: relative; */
     height: auto;
     padding: 100px 0;
     width: 100%;
@@ -262,17 +262,42 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 
 
 
+
 .home .left-col
 {
-    
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 50px 50px;
     background-color: transparent;
 }
+
+.home .left-col .square
+{
+    height:50px;
+    width: 50px;
+    border: 2px solid coral;
+    position:absolute;
+    bottom: 0;
+    left: 100;
+    transform: rotate(45deg);
+  
+}
+.home .left-col .circle
+{
+    height:50px;
+    width: 50px;
+    border: 2px solid coral;
+    position:absolute;
+    border-radius: 50%;
+    top: 50px;
+    right: 0;
+   
+}
 .home .right-col
 {
+    display: block;
     /* border: 1px solid white; */
     height:500px;
   background: url('../assests/image_6483441-2.png') no-repeat;
@@ -987,7 +1012,9 @@ body {
   
    
 }
-
+.home .left-col .square, .home .left-col .circle{
+    display: none;
+}
 .about .section .icon-wrapper .icons p{
     display: none;
 }
