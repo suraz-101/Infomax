@@ -22,18 +22,23 @@ align-items: center;
 
 }
 
+.position1
+{
+    padding: 0 100px;
+}
+
 .header 
 {
     background-color:   black;
    display: flex;
    justify-content: space-between;
    align-items: center;
-    padding: 0 10%;
+    
     color: white;
     position: fixed;
     /* border: 1px solid white; */
     width: 100%;
-    z-index: 2;
+    z-index: 9;
 }
 
 #close
@@ -269,7 +274,9 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 50px 50px;
+    /* border: 1px solid white; */
+
+    /* padding: 50px 50px; */
     background-color: transparent;
 }
 
@@ -292,24 +299,10 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
     position:absolute;
     border-radius: 50%;
     top: 50px;
-    right: 0;
+    right: 50px;
    
 }
-.home .right-col
-{
-    display: block;
-    /* border: 1px solid white; */
-    height:500px;
-  background: url('../assests/image_6483441-2.png') no-repeat;
-  background-size: contain;
-  background-position: center;
-  /* width: 30%; */
-  opacity: 0.8;
-  /* border-radius: 50%; */
-  padding: 50px 0px;
- 
- 
-}
+
 
 
 .home h4{
@@ -317,6 +310,8 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 }
 
 .button{
+    /* width: 40%; */
+    /* border: 1px solid white; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -374,7 +369,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
     position: fixed;
     top: 400px;
     background-color: transparent;
-    z-index: 1;
+    z-index: 5;
 }
 .media i{
     color: black;
@@ -436,9 +431,9 @@ color: black;
 
 
 .about{
-    /* position:relative; */
+    position:relative;
     height: auto;
-   background-color: #C2CAD0;
+   background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -446,10 +441,29 @@ color: black;
     font-family: 'Courier New', Courier, monospace;
    
 }
+
+.about #wave
+{
+    
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    top: -2px;
+    left: 0
+    /* background: linear-gradient(); */
+}
+.about #wave2
+{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 .about .section
 {
     position: relative;
-    top: -100px;
+    top: -80px;
     height: auto;
     width: 70%;
     padding: 20px 20px;
@@ -464,6 +478,7 @@ color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-shadow: 5px 5px 20px gray;
     border-radius: 5px;
+    z-index: 3;
 }
 .skills{
     height: auto;
@@ -484,11 +499,11 @@ color: black;
 
 .aboutme
 {
-   
+   position: relative;
     height: auto;
     border-radius: 5px;
     padding: 0px 0px 50px 0px;
-    background-color: #C2CAD0;
+    background-color: white;
 }
 
 
@@ -501,7 +516,14 @@ color: black;
 
 
 
-
+.aboutme #wave3
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
 
 
 
@@ -533,7 +555,7 @@ color: black;
     border-radius: 50%;
     background-color: white;
 }
-/* .skills .icon-wrapper .icons .image
+/* .lsls .icon-wrapper .icons .image
 {
     height: 50px;
     width: 50px;
@@ -562,6 +584,7 @@ color: black;
 {
     box-shadow: 2px 2px 10px gray;
     border-radius: 5px; 
+    z-index: 2;
    
 }
 .skills .icon-wrapper .icons img{
