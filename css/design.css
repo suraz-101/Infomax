@@ -890,7 +890,7 @@ body {
   }
 
   .home .right-col {
-    display: none;
+    display: flex;
   }
 
   .about .section {
