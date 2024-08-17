@@ -183,17 +183,17 @@ html {
 }
 
 .header .navbar .contact {
-  background-color: coral;
-  color: black;
+  /* background-color: coral; */
+  color: coral;
   padding: 10px;
   border-radius: 2px;
 }
 
-.header .navbar .contact:hover {
+/* .header .navbar .contact:hover {
   background-color: transparent;
   color: coral;
   border: 2px solid coral;
-}
+} */
 .header .navbar a::before {
   content: "";
   position: absolute;
@@ -205,7 +205,8 @@ html {
   z-index: -1;
   transition: 0.5s;
 }
-.header .navbar a:hover::before {
+.header .navbar a:hover::before,
+.header .navbar a.active::before {
   width: 60%;
   color: black;
 }
